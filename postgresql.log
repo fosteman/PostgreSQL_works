@@ -1,0 +1,149 @@
+2018-07-31 14:10:20.948 EDT [98875] LOG:  listening on IPv6 address "::1", port 5432
+2018-07-31 14:10:20.948 EDT [98875] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2018-07-31 14:10:20.951 EDT [98875] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2018-07-31 14:10:21.028 EDT [98876] LOG:  database system was shut down at 2018-07-31 14:10:20 EDT
+2018-07-31 14:10:21.062 EDT [98875] LOG:  database system is ready to accept connections
+2018-08-01 12:18:46.722 EDT [98875] LOG:  received fast shutdown request
+2018-08-01 12:18:46.724 EDT [98875] LOG:  aborting any active transactions
+2018-08-01 12:18:46.728 EDT [98919] FATAL:  terminating connection due to administrator command
+2018-08-01 12:18:46.732 EDT [98875] LOG:  worker process: logical replication launcher (PID 98882) exited with exit code 1
+2018-08-01 12:18:46.733 EDT [98877] LOG:  shutting down
+2018-08-01 12:18:46.770 EDT [98875] LOG:  database system is shut down
+2018-11-20 05:15:16.065 EST [24274] LOG:  listening on IPv6 address "::1", port 5432
+2018-11-20 05:15:16.066 EST [24274] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2018-11-20 05:15:16.066 EST [24274] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2018-11-20 05:15:16.472 EST [24275] LOG:  database system was shut down at 2018-08-01 12:18:46 EDT
+2018-11-20 05:15:16.485 EST [24274] LOG:  database system is ready to accept connections
+2018-11-20 05:15:33.318 EST [24299] FATAL:  no PostgreSQL user name specified in startup packet
+2018-11-20 05:15:40.321 EST [24301] FATAL:  no PostgreSQL user name specified in startup packet
+2018-11-20 05:20:03.956 EST [24382] ERROR:  syntax error at or near "`" at character 14
+2018-11-20 05:20:03.956 EST [24382] STATEMENT:  CREATE TABLE `Accomodation` (
+		`StayID` INT(4) NOT NULL AUTO_INCREMENT,
+		`PatientID` INT(9) NOT NULL AUTO_INCREMENT,
+		`StartTime` DATETIME NOT NULL AUTO_INCREMENT,
+		`EndTime` DATETIME NOT NULL AUTO_INCREMENT,
+		`Room` INT(3) NOT NULL AUTO_INCREMENT,
+		PRIMARY KEY (`StayID`)
+	)
+2018-11-20 05:20:12.825 EST [24382] ERROR:  syntax error at or near "(" at character 155
+2018-11-20 05:20:12.825 EST [24382] STATEMENT:  
+	
+	CREATE TABLE "Nurse" (
+		"NurseID" numeric(3) NOT NULL ,
+		"NurseName" VARCHAR(20) NOT NULL ,
+		"Position" VARCHAR(20) NOT NULL ,
+		"RegisterStatus" BOOLEAN(1) NOT NULL ,
+		"SIN" numeric(11) NOT NULL ,
+		PRIMARY KEY ("NurseID")
+	)
+2018-11-20 05:20:32.375 EST [24382] ERROR:  relation "Accomodation" already exists
+2018-11-20 05:20:32.375 EST [24382] STATEMENT:  CREATE TABLE "Accomodation" (
+		"StayID" numeric(4) NOT NULL ,
+		"PatientID" numeric(9) NOT NULL ,
+		"StartTime" timestamp NOT NULL ,
+		"EndTime" timestamp NOT NULL ,
+		"Room" numeric(3) NOT NULL ,
+		PRIMARY KEY ("StayID")
+	)
+2018-11-20 05:20:39.894 EST [24382] ERROR:  syntax error at or near "(" at character 155
+2018-11-20 05:20:39.894 EST [24382] STATEMENT:  
+	
+	CREATE TABLE "Nurse" (
+		"NurseID" numeric(3) NOT NULL ,
+		"NurseName" VARCHAR(20) NOT NULL ,
+		"Position" VARCHAR(20) NOT NULL ,
+		"RegisterStatus" BOOLEAN(1) NOT NULL ,
+		"SIN" numeric(11) NOT NULL ,
+		PRIMARY KEY ("NurseID")
+	)
+2018-11-20 05:21:44.672 EST [24382] ERROR:  syntax error at or near "(" at character 155
+2018-11-20 05:21:44.672 EST [24382] STATEMENT:  
+	
+	CREATE TABLE "Nurse" (
+		"NurseID" numeric(3) NOT NULL ,
+		"NurseName" VARCHAR(20) NOT NULL ,
+		"Position" VARCHAR(20) NOT NULL ,
+		"RegisterStatus" BOOLEAN(1) NOT NULL ,
+		"SIN" numeric(11) NOT NULL ,
+		PRIMARY KEY ("NurseID")
+	)
+2018-11-20 05:23:19.214 EST [24382] ERROR:  syntax error at or near "lab11" at character 12
+2018-11-20 05:23:19.214 EST [24382] STATEMENT:  set schema lab11
+2018-11-20 12:40:10.224 EST [24274] LOG:  received fast shutdown request
+2018-11-20 12:40:10.225 EST [24274] LOG:  aborting any active transactions
+2018-11-20 12:40:10.226 EST [24293] FATAL:  terminating connection due to administrator command
+2018-11-20 12:40:10.227 EST [24274] LOG:  worker process: logical replication launcher (PID 24281) exited with exit code 1
+2018-11-20 12:40:10.227 EST [24276] LOG:  shutting down
+2018-11-20 12:40:10.238 EST [24274] LOG:  database system is shut down
+2019-03-05 05:20:34.140 EST [738] LOG:  listening on IPv6 address "::1", port 5432
+2019-03-05 05:20:34.141 EST [738] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2019-03-05 05:20:34.147 EST [738] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2019-03-05 05:20:34.228 EST [741] LOG:  database system was shut down at 2018-11-20 12:40:10 EST
+2019-03-05 05:20:34.261 EST [738] LOG:  database system is ready to accept connections
+2019-03-05 05:37:05.291 EST [968] ERROR:  column "id" named in key does not exist at character 49
+2019-03-05 05:37:05.291 EST [968] STATEMENT:  CREATE TABLE "public"."area" ("area_id" serial, PRIMARY KEY (id));
+2019-03-05 05:37:09.995 EST [968] ERROR:  column "id" named in key does not exist at character 49
+2019-03-05 05:37:09.995 EST [968] STATEMENT:  CREATE TABLE "public"."area" ("area_id" serial, PRIMARY KEY (id));
+2019-03-05 05:37:16.898 EST [968] ERROR:  column "id" named in key does not exist at character 49
+2019-03-05 05:37:16.898 EST [968] STATEMENT:  CREATE TABLE "public"."area" ("area_id" serial, PRIMARY KEY (id));
+2019-03-05 05:37:22.091 EST [968] ERROR:  column "id" named in key does not exist at character 49
+2019-03-05 05:37:22.091 EST [968] STATEMENT:  CREATE TABLE "public"."area" ("area_id" serial, PRIMARY KEY (id));
+2019-03-05 05:43:49.646 EST [968] ERROR:  foreign key constraint "real_estate_area_id_fkey" cannot be implemented
+2019-03-05 05:43:49.646 EST [968] DETAIL:  Key columns "area_id" and "area_id" are of incompatible types: character varying and integer.
+2019-03-05 05:43:49.646 EST [968] STATEMENT:  ALTER TABLE "public"."real_estate" ADD FOREIGN KEY ("area_id") REFERENCES "public"."area" ("area_id");
+2019-03-05 05:43:59.943 EST [968] ERROR:  column "area_id" cannot be cast automatically to type integer
+2019-03-05 05:43:59.943 EST [968] HINT:  You might need to specify "USING area_id::integer".
+2019-03-05 05:43:59.943 EST [968] STATEMENT:  ALTER TABLE "public"."real_estate" ALTER COLUMN "area_id" SET DATA TYPE int4;
+2019-03-05 05:44:18.016 EST [968] ERROR:  column "area_id" cannot be cast automatically to type integer
+2019-03-05 05:44:18.016 EST [968] HINT:  You might need to specify "USING area_id::integer".
+2019-03-05 05:44:18.016 EST [968] STATEMENT:  ALTER TABLE "public"."real_estate" ALTER COLUMN "area_id" SET DATA TYPE int4;
+2019-03-05 05:44:34.152 EST [968] ERROR:  column "area_id" cannot be cast automatically to type integer
+2019-03-05 05:44:34.152 EST [968] HINT:  You might need to specify "USING area_id::integer".
+2019-03-05 05:44:34.152 EST [968] STATEMENT:  ALTER TABLE "public"."real_estate" ALTER COLUMN "area_id" SET DATA TYPE int4;
+2019-03-05 05:44:49.408 EST [968] ERROR:  column "area_id" cannot be cast automatically to type integer
+2019-03-05 05:44:49.408 EST [968] HINT:  You might need to specify "USING area_id::integer".
+2019-03-05 05:44:49.408 EST [968] STATEMENT:  ALTER TABLE "public"."real_estate" ALTER COLUMN "area_id" SET DATA TYPE int4;
+2019-03-05 05:45:24.569 EST [968] ERROR:  column "area_id" cannot be cast automatically to type integer
+2019-03-05 05:45:24.569 EST [968] HINT:  You might need to specify "USING area_id::integer".
+2019-03-05 05:45:24.569 EST [968] STATEMENT:  ALTER TABLE "public"."real_estate" ALTER COLUMN "area_id" SET DATA TYPE int4;
+2019-03-05 05:45:28.493 EST [968] ERROR:  column "area_id" referenced in foreign key constraint does not exist
+2019-03-05 05:45:28.493 EST [968] STATEMENT:  ALTER TABLE "public"."real_estate" ADD FOREIGN KEY ("area_id") REFERENCES "public"."area" ("area_id");
+2019-03-05 05:45:39.747 EST [968] ERROR:  column "area_id" referenced in foreign key constraint does not exist
+2019-03-05 05:45:39.747 EST [968] STATEMENT:  ALTER TABLE "public"."real_estate" ADD FOREIGN KEY ("area_id") REFERENCES "public"."area" ("area_id");
+2019-03-05 05:46:16.364 EST [968] ERROR:  column "area_id" referenced in foreign key constraint does not exist
+2019-03-05 05:46:16.364 EST [968] STATEMENT:  ALTER TABLE "public"."real_estate" ADD FOREIGN KEY ("area_id") REFERENCES "public"."area" ("area_id");
+2019-03-05 05:46:36.949 EST [968] ERROR:  column "area_id" referenced in foreign key constraint does not exist
+2019-03-05 05:46:36.949 EST [968] STATEMENT:  ALTER TABLE "public"."real_estate" ADD FOREIGN KEY ("area_id") REFERENCES "public"."area" ("area_id");
+2019-03-05 05:50:14.100 EST [1691] LOG:  incomplete startup packet
+2019-03-05 05:52:25.054 EST [1787] ERROR:  relation "public.accomodation" does not exist at character 52
+2019-03-05 05:52:25.054 EST [1787] STATEMENT:  SELECT reltuples::BIGINT FROM pg_class WHERE oid = 'public.Accomodation'::regclass
+2019-03-05 05:52:25.204 EST [1787] ERROR:  relation "public.admission" does not exist at character 52
+2019-03-05 05:52:25.204 EST [1787] STATEMENT:  SELECT reltuples::BIGINT FROM pg_class WHERE oid = 'public.Admission'::regclass
+2019-03-05 05:52:25.671 EST [1787] ERROR:  relation "public.depo" does not exist at character 52
+2019-03-05 05:52:25.671 EST [1787] STATEMENT:  SELECT reltuples::BIGINT FROM pg_class WHERE oid = 'public.Depo'::regclass
+2019-03-05 05:52:34.627 EST [1787] ERROR:  relation "public.accomodation" does not exist at character 52
+2019-03-05 05:52:34.627 EST [1787] STATEMENT:  SELECT reltuples::BIGINT FROM pg_class WHERE oid = 'public.Accomodation'::regclass
+2019-03-05 05:52:35.052 EST [1787] ERROR:  relation "public.admission" does not exist at character 52
+2019-03-05 05:52:35.052 EST [1787] STATEMENT:  SELECT reltuples::BIGINT FROM pg_class WHERE oid = 'public.Admission'::regclass
+2019-03-05 05:52:35.395 EST [1787] ERROR:  relation "public.depo" does not exist at character 52
+2019-03-05 05:52:35.395 EST [1787] STATEMENT:  SELECT reltuples::BIGINT FROM pg_class WHERE oid = 'public.Depo'::regclass
+2019-03-05 05:52:39.452 EST [1787] ERROR:  relation "public.admission" does not exist at character 52
+2019-03-05 05:52:39.452 EST [1787] STATEMENT:  SELECT reltuples::BIGINT FROM pg_class WHERE oid = 'public.Admission'::regclass
+2019-03-05 05:52:43.533 EST [1787] ERROR:  relation "public.accomodation" does not exist at character 52
+2019-03-05 05:52:43.533 EST [1787] STATEMENT:  SELECT reltuples::BIGINT FROM pg_class WHERE oid = 'public.Accomodation'::regclass
+2019-03-05 05:52:45.536 EST [1787] ERROR:  relation "public.admission" does not exist at character 52
+2019-03-05 05:52:45.536 EST [1787] STATEMENT:  SELECT reltuples::BIGINT FROM pg_class WHERE oid = 'public.Admission'::regclass
+2019-03-05 06:03:44.730 EST [1944] ERROR:  column "city" of relation "property" does not exist
+2019-03-05 06:03:44.730 EST [1944] STATEMENT:  ALTER TABLE public.property DROP COLUMN city
+2019-03-05 06:04:22.723 EST [1941] ERROR:  relation "public.property" does not exist
+2019-03-05 06:04:22.723 EST [1941] STATEMENT:  ALTER TABLE public.property SET WITHOUT OIDS
+2019-03-05 06:11:05.741 EST [1945] ERROR:  column "area_id" of relation "real_estate" already exists
+2019-03-05 06:11:05.741 EST [1945] STATEMENT:  ALTER TABLE public.real_estate ADD area_id int4 NULL
+2019-03-05 06:18:16.987 EST [1944] ERROR:  multiple primary keys for table "property" are not allowed
+2019-03-05 06:18:16.987 EST [1944] STATEMENT:  ALTER TABLE public.property ADD CONSTRAINT property_pk PRIMARY KEY (property_id)
+2019-03-05 06:25:17.014 EST [1944] ERROR:  foreign key constraint "property_area_fk" cannot be implemented
+2019-03-05 06:25:17.014 EST [1944] DETAIL:  Key columns "area_id" and "area_id" are of incompatible types: character varying and integer.
+2019-03-05 06:25:17.014 EST [1944] STATEMENT:  ALTER TABLE public.property ADD CONSTRAINT property_area_fk FOREIGN KEY (area_id) REFERENCES public.area(area_id)
+2019-03-05 06:25:29.209 EST [1944] ERROR:  foreign key constraint "property_area_fk" cannot be implemented
+2019-03-05 06:25:29.209 EST [1944] DETAIL:  Key columns "area_id" and "area_id" are of incompatible types: character varying and integer.
+2019-03-05 06:25:29.209 EST [1944] STATEMENT:  ALTER TABLE public.property ADD CONSTRAINT property_area_fk FOREIGN KEY (area_id) REFERENCES public.area(area_id)
